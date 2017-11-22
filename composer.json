@@ -1,0 +1,32 @@
+{
+    "name": "adambalan/laravel-helpscout",
+    "description": "A helpscout API package for laravel",
+    "type": "library",
+    "require": {
+        "adambalan/helpscout-api": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Balan",
+            "email": "a-kyle@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LaravelHelpscout\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelHelpscout\\Providers\\HelpscoutAPIServiceProvider"
+            ],
+            "aliases": {
+                "Articles": "LaravelHelpscout\\Facades\\Articles",
+                "Collections": "LaravelHelpscout\\Facades\\Collections",
+                "Categories": "LaravelHelpscout\\Facades\\Categories"
+            }
+        }
+    },
+}
