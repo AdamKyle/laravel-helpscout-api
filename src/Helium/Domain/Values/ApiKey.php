@@ -6,13 +6,13 @@ use HelpscoutApi\Contracts\ApiKey as ApiKeyContract;
 
 class ApiKey implements ApiKeyContract {
 
-    private $apikey;
+    private $apiKey;
 
     public function __construct(string $apiKey) {
-        $this->apikey = $apikey;
+        $this->apiKey = $apiKey;
     }
 
     public function getKey() {
-        return $this->apikey;
+        return $this->apiKey;
     }
 }

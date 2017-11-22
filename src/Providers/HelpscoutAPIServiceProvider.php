@@ -10,6 +10,10 @@ use HelpscoutApi\Api\Get\Collections;
 use HelpscoutApi\Api\Get\Categories;
 
 class HelpscoutAPIServiceProvider extends ServiceProvider {
+
+    private $client;
+
+    private $apiKey;
     /**
      * Bootstrap the application services.
      *
@@ -23,22 +27,22 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
      * @return void
      */
     public function register() {
-        $apikey = new ApiKey(env('HELPSCOUT_DOCS_API_KEY'));
+        $this->apiKey = new ApiKey(env('HELPSCOUT_DOCS_API_KEY'));
 
-        $client = new Client([
+        $this->client = new Client([
             'base_uri' => 'https://docsapi.helpscout.net/v1/',
         ]);
 
         $this->app->singleton('helpscout.api.get.articles', function () {
-            return new Articles($client, $apikey);
+            return new Articles($this->client, $this->apiKey);
         });
 
         $this->app->singleton('helpscout.api.get.collections', function () {
-            return new Collections($client, $apikey);
+            return new Collections($this->client, $this->apiKey);
         });
 
         $this->app->singleton('helpscout.api.get.categories', function () {
-            return new Categories($client, $apikey);
+            return new Categories($this->client, $this->apiKey);
         });
 
         $this->app->alias('helpscout.api.get.articles',  Articles::class);
