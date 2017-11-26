@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "adambalan/helpscout-api",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdamKyle/helpscout-api.git",
-                "reference": "4a19eb5669e27088afa19552109765b5c05bbbf3"
+                "reference": "e50eeed517002fa8747c1465c24dc63122fbf0d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/4a19eb5669e27088afa19552109765b5c05bbbf3",
-                "reference": "4a19eb5669e27088afa19552109765b5c05bbbf3",
+                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/e50eeed517002fa8747c1465c24dc63122fbf0d2",
+                "reference": "e50eeed517002fa8747c1465c24dc63122fbf0d2",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "http",
                 "library"
             ],
-            "time": "2017-11-26T03:55:59+00:00"
+            "time": "2017-11-26T04:09:29+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
