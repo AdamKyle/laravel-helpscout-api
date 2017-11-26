@@ -12,11 +12,13 @@ API Endpoints easier.
 - `composer require adambalan/laravel-helpscout`
 - Create an ENV called: `HELPSCOUT_DOCS_API_KEY` and assign it your appropriate API key.
 
-The laravel provider and facades will be discovered automatically. The fallowing facades are:
+The Laravel provider and facades will be discovered automatically. The fallowing facades are:
 
 - [Articles](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Articles.md)
 - [Collections](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Collections.md)
 - [Categories](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Categories.md)
+- [Redirects](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Redirects.md)
+- [Sites](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Sites.md)
 
 All of the methods implemented on these classes require a contract be passed in. contracts are interfaces for getters/setters
 that define specific set of behaviour and can be implemted as Value objects (as apaert of DDD).

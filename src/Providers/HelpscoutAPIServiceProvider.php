@@ -8,12 +8,25 @@ use LaravelHelpscout\Helium\Domain\Values\ApiKey;
 use HelpscoutApi\Api\Get\Articles;
 use HelpscoutApi\Api\Get\Collections;
 use HelpscoutApi\Api\Get\Categories;
+use HelpscoutApi\Api\Get\Redirects;
+use HelpscoutApi\Api\Get\Sites;
 
+/**
+ * Service provider to register the facades
+ *
+ */
 class HelpscoutAPIServiceProvider extends ServiceProvider {
 
+    /**
+     * GuzzleHttp\Client
+     */
     private $client;
 
+    /**
+     * Api key
+     */
     private $apiKey;
+
     /**
      * Bootstrap the application services.
      *
@@ -45,9 +58,19 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             return new Categories($this->client, $this->apiKey);
         });
 
+        $this->app->singleton('helpscout.api.get.redirects', function () {
+            return new Redirects($this->client, $this->apiKey);
+        });
+
+        $this->app->singleton('helpscout.api.get.sites', function () {
+            return new Sites($this->client, $this->apiKey);
+        });
+
         $this->app->alias('helpscout.api.get.articles',  Articles::class);
         $this->app->alias('helpscout.api.get.collections',  Collections::class);
         $this->app->alias('helpscout.api.get.categories',  Categories::class);
+        $this->app->alias('helpscout.api.get.redirects',  Redirects::class);
+        $this->app->alias('helpscout.api.get.sites',  Sites::class);
     }
 
     /**
@@ -59,7 +82,9 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
         return [
             Articles::class,
             Collections::class,
-            Categories::class
+            Categories::class,
+            Redirects::class,
+            Sites::class,
         ];
     }
 }

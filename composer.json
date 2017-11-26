@@ -3,7 +3,7 @@
     "description": "A helpscout API package for laravel",
     "type": "library",
     "require": {
-        "adambalan/helpscout-api": "1.0.*"
+        "adambalan/helpscout-api": "1.*"
     },
     "license": "MIT",
     "authors": [
