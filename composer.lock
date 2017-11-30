@@ -4,21 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e800c7287a5007a7349e6fed3945fd11",
+    "content-hash": "d54b5311c34a6ecc6f13ade39add3f73",
     "packages": [
         {
             "name": "adambalan/helpscout-api",
-            "version": "1.2.2",
+            "version": "dev-new-post-api",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdamKyle/helpscout-api.git",
-                "reference": "e50eeed517002fa8747c1465c24dc63122fbf0d2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/e50eeed517002fa8747c1465c24dc63122fbf0d2",
-                "reference": "e50eeed517002fa8747c1465c24dc63122fbf0d2",
-                "shasum": ""
+                "reference": "57cc29c43772e5a33627f77faabc8d140aec42f9"
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3"
@@ -35,7 +29,16 @@
                     "HelpscoutApi\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "HelpscoutApi\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "generate:docs": [
+                    "vendor/bin/phpdoc -d ./src -t docs/ --template='xml' && rm -r docs/phpdoc-cache-* && vendor/bin/phpdocmd docs/structure.xml docs/"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -53,7 +56,7 @@
                 "http",
                 "library"
             ],
-            "time": "2017-11-26T04:09:29+00:00"
+            "time": "2017-11-30T00:32:11+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -290,7 +293,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "adambalan/helpscout-api": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

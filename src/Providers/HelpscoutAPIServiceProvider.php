@@ -10,6 +10,7 @@ use HelpscoutApi\Api\Get\Collections;
 use HelpscoutApi\Api\Get\Categories;
 use HelpscoutApi\Api\Get\Redirects;
 use HelpscoutApi\Api\Get\Sites;
+use HelpscoutApi\Api\Post\Article;
 
 /**
  * Service provider to register the facades
@@ -66,11 +67,16 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             return new Sites($this->client, $this->apiKey);
         });
 
+        $this->app->singleton('helpscout.api.post.article', function() {
+            return new Article($this->client, $this->apiKey);
+        })
+
         $this->app->alias('helpscout.api.get.articles',  Articles::class);
         $this->app->alias('helpscout.api.get.collections',  Collections::class);
         $this->app->alias('helpscout.api.get.categories',  Categories::class);
         $this->app->alias('helpscout.api.get.redirects',  Redirects::class);
         $this->app->alias('helpscout.api.get.sites',  Sites::class);
+        $this->app->alias('helpscout.api.post.article', Article::class);
     }
 
     /**
