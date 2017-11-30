@@ -69,7 +69,7 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
 
         $this->app->singleton('helpscout.api.post.article', function() {
             return new Article($this->client, $this->apiKey);
-        })
+        });
 
         $this->app->alias('helpscout.api.get.articles',  Articles::class);
         $this->app->alias('helpscout.api.get.collections',  Collections::class);
