@@ -2,14 +2,9 @@
     "name": "adambalan/laravel-helpscout",
     "description": "A helpscout API package for laravel",
     "type": "library",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/AdamKyle/helpscout-api.git"
-        }
-    ],
+    "minimum-stability": "dev",
     "require": {
-        "adambalan/helpscout-api": "dev-new-post-api"
+        "adambalan/helpscout-api": "1.4.0-beta"
     },
     "license": "MIT",
     "authors": [
