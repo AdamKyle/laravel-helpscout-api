@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5634ac31eb801704b599926fdb9ff398",
+    "content-hash": "547bbd3c94019607910a93471d5424d3",
     "packages": [
         {
             "name": "adambalan/helpscout-api",
-            "version": "1.4.0-beta",
+            "version": "1.4.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdamKyle/helpscout-api.git",
-                "reference": "57cc29c43772e5a33627f77faabc8d140aec42f9"
+                "reference": "95034f27a35cfec16b9c9f640beb2c4598de9703"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/57cc29c43772e5a33627f77faabc8d140aec42f9",
-                "reference": "57cc29c43772e5a33627f77faabc8d140aec42f9",
+                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/95034f27a35cfec16b9c9f640beb2c4598de9703",
+                "reference": "95034f27a35cfec16b9c9f640beb2c4598de9703",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "http",
                 "library"
             ],
-            "time": "2017-11-30T00:32:11+00:00"
+            "time": "2017-11-30T03:52:33+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -122,23 +122,23 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "dev-master",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "e9cdab6ff93ff789b5b599326c727f51d10893a6"
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/e9cdab6ff93ff789b5b599326c727f51d10893a6",
-                "reference": "e9cdab6ff93ff789b5b599326c727f51d10893a6",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.36"
+                "phpunit/phpunit": "^4.0"
             },
             "type": "library",
             "extra": {
@@ -169,20 +169,20 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2017-10-06T12:25:00+00:00"
+            "time": "2016-12-20T10:07:11+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "dev-master",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "d2537c86fa8b004c29e9b9f5e10028f0a29df101"
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/d2537c86fa8b004c29e9b9f5e10028f0a29df101",
-                "reference": "d2537c86fa8b004c29e9b9f5e10028f0a29df101",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
                 "shasum": ""
             },
             "require": {
@@ -234,11 +234,11 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-10-07T03:19:56+00:00"
+            "time": "2017-03-20T17:10:46+00:00"
         },
         {
             "name": "psr/http-message",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
@@ -289,8 +289,10 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
+    "minimum-stability": "beta",
+    "stability-flags": {
+        "adambalan/helpscout-api": 10
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
