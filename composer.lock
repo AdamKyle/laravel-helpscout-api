@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ef34ca40408f767a647b8863db42f27",
+    "content-hash": "5e204d1e3e0830711b9f61d18497a51a",
     "packages": [
         {
             "name": "adambalan/helpscout-api",
-            "version": "1.4.0-beta2",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdamKyle/helpscout-api.git",
-                "reference": "9838479d33c31d5b7834636ef24e34dd77d2de3c"
+                "reference": "c6bf890489f8770c25ad56737efacc889a9be0c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/9838479d33c31d5b7834636ef24e34dd77d2de3c",
-                "reference": "9838479d33c31d5b7834636ef24e34dd77d2de3c",
+                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/c6bf890489f8770c25ad56737efacc889a9be0c3",
+                "reference": "c6bf890489f8770c25ad56737efacc889a9be0c3",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "http",
                 "library"
             ],
-            "time": "2017-11-30T03:58:10+00:00"
+            "time": "2017-11-30T04:45:14+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -289,10 +289,8 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "beta",
-    "stability-flags": {
-        "adambalan/helpscout-api": 10
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
