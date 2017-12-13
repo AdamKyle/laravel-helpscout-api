@@ -6,6 +6,6 @@ use Illuminate\Support\Facades\Facade;
 
 class Collection extends Facade {
     protected static function getFacadeAccessor() {
-        return 'helpscout.api.get.collection'; 
+        return 'helpscout.api.get.collections'; 
     }
 }
