@@ -12,7 +12,8 @@ API Endpoints easier.
 - `composer require adambalan/laravel-helpscout`
 - Create an ENV called: `HELPSCOUT_DOCS_API_KEY` and assign it your appropriate API key.
 
-The Laravel provider and facades will be discovered automatically. The fallowing facades are:
+
+## GET Requests (Facades)
 
 - [Articles](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Articles.md)
 - [Collections](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Collections.md)
@@ -20,8 +21,22 @@ The Laravel provider and facades will be discovered automatically. The fallowing
 - [Redirects](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Redirects.md)
 - [Sites](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Sites.md)
 
-All of the methods implemented on these classes require a contract be passed in. contracts are interfaces for getters/setters
-that define specific set of behaviour and can be implemted as Value objects (as apaert of DDD).
+## POST Requests (Facades)
+
+- [Articles](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Article.md)
+- [Collections](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Collection.md)
+- [Categories](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Categorie.md)
+
+## Response Class (Regular Class: `HelpscoutApi\Response\Response`)
+
+We have a response class that contains two methods: `getLocation()` and `getContents()` which allows you to get the location of the created object and the contents
+of the body of the response.
+
+For the created response to come back, pass in: `{'required': true}` for the body when implementing the Post Body contracts. This will make sure that any created
+resources are passed back to you and you can use the `getContents()` method to get the decoded JSON values.
+
+For more info please see the [Response](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Response-Response.md) docs.
+
 
 ## Where are the tests?
 
