@@ -77,7 +77,7 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             return new Category($this->client, $this->apiKey);
         });
 
-        $this->app->singleton('helpscout.api.post.collecion', function() {
+        $this->app->singleton('helpscout.api.post.collection', function() {
             return new Collection($this->client, $this->apiKey);
         });
 
