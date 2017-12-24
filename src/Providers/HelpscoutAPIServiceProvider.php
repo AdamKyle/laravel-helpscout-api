@@ -113,6 +113,7 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             Article::class,
             Category::Class,
             Collection::class,
+            Pool::class,
         ];
     }
 }
