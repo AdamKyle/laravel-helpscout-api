@@ -27,6 +27,10 @@ API Endpoints easier.
 - [Collections](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Collection.md)
 - [Categories](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Categorie.md)
 
+## ASYNC (Facades)
+
+- [Pool](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Pool.md)
+
 ## Response Class (Regular Class: `HelpscoutApi\Response\Response`)
 
 We have a response class that contains two methods: `getLocation()` and `getContents()` which allows you to get the location of the created object and the contents
@@ -36,7 +40,6 @@ For the created response to come back, pass in: `{'required': true}` for the bod
 resources are passed back to you and you can use the `getContents()` method to get the decoded JSON values.
 
 For more info please see the [Response](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Response-Response.md) docs.
-
 
 ## Where are the tests?
 
