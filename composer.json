@@ -31,7 +31,7 @@
                 "Collection": "LaravelHelpscout\\Facades\\Collection",
                 "Pool": "LaravelHelpscout\\Facades\\Pool",
                 "Redirects": "LaravelHelpscout\\Facades\\Redirects",
-                "Sites": "LaravelHelpscout\\Facades\\Sites",
+                "Sites": "LaravelHelpscout\\Facades\\Sites"
             }
         }
     }
