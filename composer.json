@@ -26,7 +26,12 @@
             "aliases": {
                 "Articles": "LaravelHelpscout\\Facades\\Articles",
                 "Collections": "LaravelHelpscout\\Facades\\Collections",
-                "Categories": "LaravelHelpscout\\Facades\\Categories"
+                "Categories": "LaravelHelpscout\\Facades\\Categories",
+                "Category": "LaravelHelpscout\\Facades\\Category",
+                "Collection": "LaravelHelpscout\\Facades\\Collection",
+                "Pool": "LaravelHelpscout\\Facades\\Pool",
+                "Redirects": "LaravelHelpscout\\Facades\\Redirects",
+                "Sites": "LaravelHelpscout\\Facades\\Sites",
             }
         }
     }
