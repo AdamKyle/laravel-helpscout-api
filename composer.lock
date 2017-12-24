@@ -4,26 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b605980503a39a60bfe832e60d8306e",
+    "content-hash": "6d884bed2195e9ad73f8925f5de2657c",
     "packages": [
         {
             "name": "adambalan/helpscout-api",
-            "version": "1.6.1",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdamKyle/helpscout-api.git",
-                "reference": "d30918a91debacea27540936b83bcdf0ce29c727"
+                "reference": "eccdfdc645bca8b557b11110af4b49314ac70e63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/d30918a91debacea27540936b83bcdf0ce29c727",
-                "reference": "d30918a91debacea27540936b83bcdf0ce29c727",
+                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/eccdfdc645bca8b557b11110af4b49314ac70e63",
+                "reference": "eccdfdc645bca8b557b11110af4b49314ac70e63",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3"
             },
             "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.4.4",
                 "dcramble/phpdoc-md": "~0.1.1",
                 "phpdocumentor/phpdocumentor": "2.9.0",
                 "phpunit/php-code-coverage": "^5.2",
@@ -53,7 +54,7 @@
                 "http",
                 "library"
             ],
-            "time": "2017-12-18T04:21:55+00:00"
+            "time": "2017-12-24T19:53:23+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

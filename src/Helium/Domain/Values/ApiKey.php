@@ -12,7 +12,7 @@ class ApiKey implements ApiKeyContract {
         $this->apiKey = $apiKey;
     }
 
-    public function getKey() {
+    public function getKey(): string {
         return $this->apiKey;
     }
 }

@@ -13,6 +13,7 @@ use HelpscoutApi\Api\Get\Sites;
 use HelpscoutApi\Api\Post\Article;
 use HelpscoutApi\Api\Post\Collection;
 use HelpscoutApi\Api\Post\Category;
+use HelpscoutApi\Api\Pool;
 
 /**
  * Service provider to register the facades
@@ -81,6 +82,10 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             return new Collection($this->client, $this->apiKey);
         });
 
+        $this->app->singleton('helpscout.api.pool', function() {
+            return new Pool($this->client);
+        });
+
         $this->app->alias('helpscout.api.get.articles',  Articles::class);
         $this->app->alias('helpscout.api.get.collections',  Collections::class);
         $this->app->alias('helpscout.api.get.categories',  Categories::class);
@@ -89,6 +94,8 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
         $this->app->alias('helpscout.api.post.article', Article::class);
         $this->app->alias('helpscout.api.post.collection', Collection::class);
         $this->app->alias('helpscout.api.post.category', Category::class);
+        $this->app->alias('helpscout.api.post.category', Category::class);
+        $this->app->alias('helpscout.api.pool', Pool::class);
     }
 
     /**
