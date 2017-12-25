@@ -15,21 +15,24 @@ API Endpoints easier.
 
 ## GET Requests (Facades)
 
-- [Articles](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Articles.md)
-- [Collections](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Collections.md)
-- [Categories](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Categories.md)
-- [Redirects](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Redirects.md)
-- [Sites](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Sites.md)
+- [`\Articles`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Articles.md)
+- [`\Collections`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Collections.md)
+- [`\Categories`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Categories.md)
+- [`\Redirects`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Redirects.md)
+- [`\Sites`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Get-Sites.md)
 
 ## POST Requests (Facades)
 
-- [Articles](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Article.md)
-- [Collections](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Collection.md)
-- [Categories](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Categorie.md)
+- [`\Article`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Article.md)
+- [`\Collection`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Collection.md)
+- [`\Categorie`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Categorie.md)
+
+## DELETE Requests (Facades)
+- [`\ArticleDelete`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Delete-Article.md)
 
 ## ASYNC (Facades)
 
-- [Pool](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Pool.md)
+- [`\Pool`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Pool.md)
 
 ## Response Class (Regular Class: `HelpscoutApi\Response\Response`)
 
