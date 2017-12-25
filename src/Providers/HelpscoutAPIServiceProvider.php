@@ -11,6 +11,7 @@ use HelpscoutApi\Api\Get\Categories;
 use HelpscoutApi\Api\Get\Redirects;
 use HelpscoutApi\Api\Get\Sites;
 use HelpscoutApi\Api\Post\Article;
+use HelpscoutApi\Api\Delete\Article as ArticleDelete;
 use HelpscoutApi\Api\Post\Collection;
 use HelpscoutApi\Api\Post\Category;
 use HelpscoutApi\Api\Pool;
@@ -82,6 +83,10 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             return new Collection($this->client, $this->apiKey);
         });
 
+        $this->app->singleton('helpscout.api.delete.article', function() {
+            return new ArticleDelete($this->client, $this->apiKey);
+        });
+
         $this->app->singleton('helpscout.api.pool', function() {
             return new Pool($this->client);
         });
@@ -92,6 +97,7 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
         $this->app->alias('helpscout.api.get.redirects',  Redirects::class);
         $this->app->alias('helpscout.api.get.sites',  Sites::class);
         $this->app->alias('helpscout.api.post.article', Article::class);
+        $this->app->alias('helpscout.api.delete.article', ArticleDelete::class);
         $this->app->alias('helpscout.api.post.collection', Collection::class);
         $this->app->alias('helpscout.api.post.category', Category::class);
         $this->app->alias('helpscout.api.post.category', Category::class);
@@ -114,6 +120,7 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             Category::Class,
             Collection::class,
             Pool::class,
+            ArticleDelete::class,
         ];
     }
 }
