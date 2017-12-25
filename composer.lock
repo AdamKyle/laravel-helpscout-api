@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d884bed2195e9ad73f8925f5de2657c",
+    "content-hash": "2042e4bde542d2abbfe44a5b2c76ef5d",
     "packages": [
         {
             "name": "adambalan/helpscout-api",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdamKyle/helpscout-api.git",
-                "reference": "eccdfdc645bca8b557b11110af4b49314ac70e63"
+                "reference": "752966343b0b0ad04345b822bdbd14ead3ac70e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/eccdfdc645bca8b557b11110af4b49314ac70e63",
-                "reference": "eccdfdc645bca8b557b11110af4b49314ac70e63",
+                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/752966343b0b0ad04345b822bdbd14ead3ac70e9",
+                "reference": "752966343b0b0ad04345b822bdbd14ead3ac70e9",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
                 "http",
                 "library"
             ],
-            "time": "2017-12-24T19:53:23+00:00"
+            "time": "2017-12-25T06:58:27+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
