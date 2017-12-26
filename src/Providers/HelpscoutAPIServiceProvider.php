@@ -12,6 +12,8 @@ use HelpscoutApi\Api\Get\Redirects;
 use HelpscoutApi\Api\Get\Sites;
 use HelpscoutApi\Api\Post\Article;
 use HelpscoutApi\Api\Delete\Article as ArticleDelete;
+use HelpscoutApi\Api\Delete\Category as CategoryDelete;
+use HelpscoutApi\Api\Delete\Collection as CollectionDelete;
 use HelpscoutApi\Api\Post\Collection;
 use HelpscoutApi\Api\Post\Category;
 use HelpscoutApi\Api\Pool;
