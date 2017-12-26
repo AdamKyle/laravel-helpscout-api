@@ -87,6 +87,14 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             return new ArticleDelete($this->client, $this->apiKey);
         });
 
+        $this->app->singleton('helpscout.api.delete.collection', function() {
+            return new CollectionDelete($this->client, $this->apiKey);
+        });
+
+        $this->app->singleton('helpscout.api.delete.category', function() {
+            return new CategoryDelete($this->client, $this->apiKey);
+        });
+
         $this->app->singleton('helpscout.api.pool', function() {
             return new Pool($this->client);
         });
@@ -98,6 +106,8 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
         $this->app->alias('helpscout.api.get.sites',  Sites::class);
         $this->app->alias('helpscout.api.post.article', Article::class);
         $this->app->alias('helpscout.api.delete.article', ArticleDelete::class);
+        $this->app->alias('helpscout.api.delete.category', CategoryDelete::class);
+        $this->app->alias('helpscout.api.delete.collection', CollectionDelete::class);
         $this->app->alias('helpscout.api.post.collection', Collection::class);
         $this->app->alias('helpscout.api.post.category', Category::class);
         $this->app->alias('helpscout.api.post.category', Category::class);
@@ -121,6 +131,8 @@ class HelpscoutAPIServiceProvider extends ServiceProvider {
             Collection::class,
             Pool::class,
             ArticleDelete::class,
+            CategoryDelete::class,
+            CollectionDelete::class,
         ];
     }
 }

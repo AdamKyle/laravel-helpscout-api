@@ -30,7 +30,9 @@
                 "Collections": "LaravelHelpscout\\Facades\\Collections",
                 "Categories": "LaravelHelpscout\\Facades\\Categories",
                 "Category": "LaravelHelpscout\\Facades\\Category",
+                "CategoryDelete": "LaravelHelpscout\\Facades\\CategoryDelete",
                 "Collection": "LaravelHelpscout\\Facades\\Collection",
+                "CollectionDelete": "LaravelHelpscout\\Facades\\CollectionDelete",
                 "Pool": "LaravelHelpscout\\Facades\\Pool",
                 "Redirects": "LaravelHelpscout\\Facades\\Redirects",
                 "Sites": "LaravelHelpscout\\Facades\\Sites"
