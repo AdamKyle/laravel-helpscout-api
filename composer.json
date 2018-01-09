@@ -4,7 +4,7 @@
     "type": "library",
     "minimum-stability": "stable",
     "require": {
-        "adambalan/helpscout-api": "1.8.3"
+        "adambalan/helpscout-api": "1.9.0"
     },
     "license": "MIT",
     "authors": [
@@ -35,7 +35,8 @@
                 "CollectionDelete": "LaravelHelpscout\\Facades\\CollectionDelete",
                 "Pool": "LaravelHelpscout\\Facades\\Pool",
                 "Redirects": "LaravelHelpscout\\Facades\\Redirects",
-                "Sites": "LaravelHelpscout\\Facades\\Sites"
+                "Sites": "LaravelHelpscout\\Facades\\Sites",
+                "ArticlePut": "LaravelHelpscout\\Facades\\ArticlePut"
             }
         }
     }
