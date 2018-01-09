@@ -27,6 +27,9 @@ API Endpoints easier.
 - [`\Collection`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Collection.md)
 - [`\Categorie`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Post-Categorie.md)
 
+## PUT Requests (Facades)
+- [`\ArticlePut`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Put-Article.md)
+
 ## DELETE Requests (Facades)
 - [`\ArticleDelete`](https://github.com/AdamKyle/helpscout-api/blob/master/docs/HelpscoutApi-Api-Delete-Article.md)
 
