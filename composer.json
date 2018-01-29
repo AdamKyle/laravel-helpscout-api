@@ -4,7 +4,7 @@
     "type": "library",
     "minimum-stability": "stable",
     "require": {
-        "adambalan/helpscout-api": "1.10.0"
+        "adambalan/helpscout-api": "1.10.1"
     },
     "license": "MIT",
     "authors": [
