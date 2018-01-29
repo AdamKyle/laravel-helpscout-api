@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cddacea7fd14b5ec0986de75adfae33",
+    "content-hash": "af03f6ae2e9ace5004bbc6982c25c7c8",
     "packages": [
         {
             "name": "adambalan/helpscout-api",
-            "version": "1.9.6",
+            "version": "1.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdamKyle/helpscout-api.git",
-                "reference": "a1716ae09c4ab68fff96e71edab30ded81eeb176"
+                "reference": "d0cdda61c051302fcbb35b80d7cbee512dc2895d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/a1716ae09c4ab68fff96e71edab30ded81eeb176",
-                "reference": "a1716ae09c4ab68fff96e71edab30ded81eeb176",
+                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/d0cdda61c051302fcbb35b80d7cbee512dc2895d",
+                "reference": "d0cdda61c051302fcbb35b80d7cbee512dc2895d",
                 "shasum": ""
             },
             "require": {
@@ -27,10 +27,10 @@
             "require-dev": {
                 "codedungeon/phpunit-result-printer": "^0.4.4",
                 "dcramble/phpdoc-md": "~0.1.1",
+                "mschuett/jmem": "dev-master",
                 "phpdocumentor/phpdocumentor": "2.9.0",
                 "phpunit/php-code-coverage": "^5.2",
-                "phpunit/phpunit": "^6.4",
-                "violet/streaming-json-encoder": "^1.1"
+                "phpunit/phpunit": "^6.4"
             },
             "type": "library",
             "autoload": {
@@ -56,7 +56,7 @@
                 "http",
                 "library"
             ],
-            "time": "2018-01-29T01:31:10+00:00"
+            "time": "2018-01-29T03:02:14+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
