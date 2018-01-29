@@ -4,31 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2818765b0bd8c8c0edb54c950aa47921",
+    "content-hash": "a6e629d9a467c51ebb3a2bc640daf3b8",
     "packages": [
         {
             "name": "adambalan/helpscout-api",
-            "version": "1.9.3",
+            "version": "1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdamKyle/helpscout-api.git",
-                "reference": "d952b3f003f709d6e5e8efac7f712dbb34423dde"
+                "reference": "63bbfde51cfff9b80dccb363365c7ee5e39a4bf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/d952b3f003f709d6e5e8efac7f712dbb34423dde",
-                "reference": "d952b3f003f709d6e5e8efac7f712dbb34423dde",
+                "url": "https://api.github.com/repos/AdamKyle/helpscout-api/zipball/63bbfde51cfff9b80dccb363365c7ee5e39a4bf9",
+                "reference": "63bbfde51cfff9b80dccb363365c7ee5e39a4bf9",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "^6.3"
+                "guzzlehttp/guzzle": "^6.3",
+                "violet/streaming-json-encoder": "^1.1"
             },
             "require-dev": {
                 "codedungeon/phpunit-result-printer": "^0.4.4",
                 "dcramble/phpdoc-md": "~0.1.1",
                 "phpdocumentor/phpdocumentor": "2.9.0",
                 "phpunit/php-code-coverage": "^5.2",
-                "phpunit/phpunit": "^6.4"
+                "phpunit/phpunit": "^6.4",
+                "violet/streaming-json-encoder": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -54,7 +56,7 @@
                 "http",
                 "library"
             ],
-            "time": "2018-01-12T04:28:54+00:00"
+            "time": "2018-01-29T00:19:06+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -286,6 +288,56 @@
                 "response"
             ],
             "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "violet/streaming-json-encoder",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/violet-php/streaming-json-encoder.git",
+                "reference": "5aa8bc3494c4a24116b46c0d461c409eeb8bf313"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/violet-php/streaming-json-encoder/zipball/5aa8bc3494c4a24116b46c0d461c409eeb8bf313",
+                "reference": "5aa8bc3494c4a24116b46c0d461c409eeb8bf313",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.3",
+                "phpunit/phpunit": "^5.7 || ^6.2",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Violet\\StreamingJsonEncoder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Riikka Kalliomäki",
+                    "email": "riikka.kalliomaki@gmail.com",
+                    "homepage": "http://riimu.net"
+                }
+            ],
+            "description": "Library for iteratively encoding large JSON documents piece by piece",
+            "homepage": "http://violet.riimu.net",
+            "keywords": [
+                "encoder",
+                "json",
+                "psr-7",
+                "streaming"
+            ],
+            "time": "2017-07-09T14:42:39+00:00"
         }
     ],
     "packages-dev": [],
